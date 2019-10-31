@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>image change by javascript</title>
+
+	<!-- css -->
+	<style>
+			
+		img{
+			margin: 100px auto;
+			display: block;
+			margin-bottom: 20px;
+		}
+		.button-area{
+			text-align: center;
+		}
+		button{
+			padding: 8px 30px;
+			font-size: 20px;
+		}
+
+
+	</style>
+</head>
+<body>
+	
+
+	<!-- image area or main img -->
+
+	<img id="img-area" src="messi-young.jpg" alt="">
+
+	<!-- button area -->
+	<div class="button-area">
+		<button onclick="young()">Young</button>
+		<button onclick="old()">Old</button>
+	</div>
+
+
+
+<script>
+	var img = document.getElementById("img-area");
+	function young(){
+		img.src='messi-young.jpg';
+	}
+
+	function old(){
+		img.src='messi-old.jpg';
+	}
+</script>
+</body>
+</html>
